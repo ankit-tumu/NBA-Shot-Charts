@@ -1,4 +1,4 @@
-# NBA Shot Chart Web App
+# NBA Shot Charts
 
 This Flask web application allows users to generate shot charts for NBA players based on player name and season.
 
