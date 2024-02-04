@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Shot Chart Web App</title>
+</head>
+<body>
+    <h1>NBA Shot Chart Web App</h1>
+    <form action="/result" method="post">
+        <label for="player_name">Player Name:</label>
+        <input type="text" name="player_name" required>
+        <label for="season_id">Season (ex: 2023-24):</label>
+        <input type="text" name="season_id" required>
+        <button type="submit">Generate Shot Chart</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
